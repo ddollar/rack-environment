@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rack-environment}
-  s.version = "1.0.1"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Dollar"]
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "lib/rack-environment.rb",
      "lib/rack_environment.rb",
      "rack-environment.gemspec",
+     "spec/config/blank.yml",
      "spec/config/environment.yml",
      "spec/rack_environment_spec.rb",
      "spec/rcov.opts",
