@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/rack-environment.rb",
      "lib/rack_environment.rb",
+     "rack-environment.gemspec",
      "spec/config/environment.yml",
      "spec/rack_environment_spec.rb",
      "spec/rcov.opts",
