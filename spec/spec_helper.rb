@@ -1,5 +1,9 @@
+require 'rubygems'
+require 'rack/test'
+
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+
 require 'rack-environment'
 require 'spec'
 require 'spec/autorun'

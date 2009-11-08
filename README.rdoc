@@ -1,6 +1,6 @@
 = rack-environment
 
-Description goes here.
+Rack::Environment
 
 == Note on Patches/Pull Requests
  
