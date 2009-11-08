@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rack-environment}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Dollar"]
   s.date = %q{2009-11-08}
-  s.description = %q{Rack::Environment}
+  s.description = %q{Rack middleware to set ENVironment variables around your app.}
   s.email = %q{ddollar@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{Rack::Environment}
+  s.summary = %q{Rack middleware to set ENVironment variables around your app.}
   s.test_files = [
     "spec/rack_environment_spec.rb",
      "spec/spec_helper.rb",
