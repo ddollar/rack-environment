@@ -3,7 +3,7 @@
 Rack::Environment is useful for getting ENVironment variables set for your
 application.
 
-A primary use This can help you to more closely simulate your Heroku environment in
+This can help you to more closely simulate your Heroku environment in
 development.
 
 == Rails
