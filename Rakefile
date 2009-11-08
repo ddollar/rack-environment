@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rack-environment"
-    gem.summary = %Q{Rack::Environment}
-    gem.description = %Q{Rack::Environment}
+    gem.summary = %Q{Rack middleware to set ENVironment variables around your app.}
+    gem.description = gem.summary
     gem.email = "ddollar@gmail.com"
     gem.homepage = "http://github.com/ddollar/rack-environment"
     gem.authors = ["David Dollar"]
