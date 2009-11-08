@@ -47,4 +47,14 @@ describe "RackEnvironment" do
     end
   end
 
+  describe "with blank config file" do
+    def app
+      rack_environment_with_filename 'blank.yml'
+    end
+
+    it "should not raise an error" do
+      @environment.should_not be_nil
+    end
+  end
+
 end

@@ -33,7 +33,8 @@ private ######################################################################
   end
 
   def read_config_file(filename)
-    YAML::load_file(filename)
+    config = YAML::load_file(filename)
+    config.is_a?(Hash) ? config : {}
   end
 
   def update_environment!
