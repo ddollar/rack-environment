@@ -1,9 +1,36 @@
 = rack-environment
 
-Rack::Environment
+Rack::Environment is useful for getting ENVironment variables set for your
+application.
+
+A primary use This can help you to more closely simulate your Heroku environment in
+development.
+
+== Rails
+
+ # config/environments/development.rb
+ config.gem 'rack-environment'
+ config.middleware.use 'RackEnvironment'
+
+ # config/environment.yml
+ VARIABLE1: value1
+ VARIABLE2: value2
+
+== Rack
+
+ # config.ru
+ Rack::Builder.new
+   use RackEnvironment if ENV['RACK_ENV'] == 'development'
+   run MyApplication.new
+ end
+
+== Options
+
+ use RackEnvironment, :environment => { :ONE => 'one', 'two' => 'two' }
+ use RackEnvironment, :file => 'config/environment.yml'
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
