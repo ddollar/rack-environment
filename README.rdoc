@@ -1,7 +1,6 @@
 = rack-environment
 
-Rack::Environment is useful for getting ENVironment variables set for your
-application.
+Sets ENVironment variables around your app.
 
 This can help you to more closely simulate your Heroku environment in
 development.
