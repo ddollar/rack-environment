@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Dollar"]
-  s.date = %q{2009-11-08}
+  s.date = %q{2009-11-09}
   s.description = %q{Rack middleware to set ENVironment variables around your app.}
   s.email = %q{ddollar@gmail.com}
   s.extra_rdoc_files = [
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/rack-environment.rb",
      "lib/rack_environment.rb",
+     "lib/rack_environment_task.rb",
      "rack-environment.gemspec",
      "spec/config/blank.yml",
      "spec/config/environment.yml",
