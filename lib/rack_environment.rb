@@ -12,6 +12,12 @@ class RackEnvironment
     app.call(env)
   end
 
+  def update_environment!
+    environment.each do |key, value|
+      ENV[key] = value
+    end
+  end
+
 private ######################################################################
 
   def default_config_file
@@ -35,12 +41,6 @@ private ######################################################################
   def read_config_file(filename)
     config = YAML::load_file(filename)
     config.is_a?(Hash) ? config : {}
-  end
-
-  def update_environment!
-    environment.each do |key, value|
-      ENV[key] = value
-    end
   end
 
 end
