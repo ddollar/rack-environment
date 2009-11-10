@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/rack-environment.rb",
      "lib/rack_environment.rb",
-     "lib/rack_environment_task.rb",
+     "lib/rack_environment/task.rb",
      "rack-environment.gemspec",
      "spec/config/blank.yml",
      "spec/config/environment.yml",
