@@ -1,4 +1,5 @@
 require 'rake'
+require 'rake/tasklib'
 require 'rack_environment'
 
 class RackEnvironment::Task < ::Rake::TaskLib
