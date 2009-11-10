@@ -1,7 +1,7 @@
 require 'rake'
 require 'rack_environment'
 
-class RackEnvironment::Task ::Rake::TaskLib
+class RackEnvironment::Task < ::Rake::TaskLib
 
   def initialize(options={})
     rack_environment = RackEnvironment.new(options)
