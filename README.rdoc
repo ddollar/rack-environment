@@ -28,6 +28,12 @@ development.
  use RackEnvironment, :environment => { :ONE => 'one', 'two' => 'two' }
  use RackEnvironment, :file => 'config/environment.yml'
 
+== Using outside the Rack stack (Rake tasks)
+
+ # Rakefile
+ require 'rack_environment_task'
+ RackEnvironment::Task.new(...) # accepts same options as RackEnvironment
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
